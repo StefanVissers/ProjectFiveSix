@@ -7,6 +7,6 @@
 <ul>
     @foreach (var category in Model)
     {
-        <li>@category.Name</li>
+        <li><a href="/Store/Browse?category=@category.Name">@category.Name</a></li>
     }
 </ul>
