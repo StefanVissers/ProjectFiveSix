@@ -15,9 +15,15 @@ namespace ProjectFiveSix.Controllers
         private ProductDBContext db = new ProductDBContext();
 
         // GET: Products
-        public ActionResult Index()
+        public ActionResult Index(string searchString)
         {
-            return View(db.products.ToList());
+            var products = from p in db.products select p;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                products = products.Where(s => s.productName.Contains(searchString));
+            }
+            return View(products);
         }
 
         // GET: Products/Details/5
