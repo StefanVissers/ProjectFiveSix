@@ -10,9 +10,10 @@ namespace ProjectFiveSix.Models
     public class Customer
     {
         [Key]
-        public int id { get; set; }
+        public int CustomerID { get; set; }
         public String name { get; set; }
         public String surname { get; set; }
+        [EmailAddress]
         public String email { get; set; }
         public String password { get; set; }
         public String dob { get; set; }
