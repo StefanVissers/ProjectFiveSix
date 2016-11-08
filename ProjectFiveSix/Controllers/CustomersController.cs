@@ -20,6 +20,13 @@ namespace ProjectFiveSix.Controllers
             return View(db.customers.ToList());
         }
 
+        // GET: Login
+        public ActionResult Login(String username, String password)
+        {
+
+            return View();
+        }
+
         // GET: Customers/Details/5
         public ActionResult Details(int? id)
         {
