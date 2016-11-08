@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ProjectFiveSix.Models
 {
-    public class order
+    public class Order
     {
         public int order_id { get; set; }
         public int customer_id { get; set; }

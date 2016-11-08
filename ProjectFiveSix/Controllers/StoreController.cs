@@ -12,22 +12,14 @@ namespace ProjectFiveSix.Controllers
         // GET: Store
         public ActionResult Index()
         {
-            var categories = new List<Category>
             {
-                new Category { Name = "Processor" },
-                new Category { Name = "Graphics Card" },
-                new Category { Name = "Motherboard" },
-                new Category { Name = "Hard Drives" },
-                new Category { Name = "Random Access Memory" },
-                new Category { Name = "Sound Systems" },
-                new Category { Name = "Monitor" }
+
             };
-            return View(categories);
+            return View();
         }
         public ActionResult Browse(String category)
         {
-            var categoryModel = new Category { Name = category };
-            return View(categoryModel);
+            return View();
         }
     }
 }

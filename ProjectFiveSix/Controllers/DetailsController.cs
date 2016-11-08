@@ -12,8 +12,7 @@ namespace ProjectFiveSix.Controllers
         // GET: Details
         public ActionResult Index(String category)
         {
-            var categoryModel = new Category { Name = category };
-            return View(categoryModel);
+            return View();
         }
     }
 }

@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ProjectFiveSix.Models
 {
-    public class admin
+    public class Admin
     {
         public int admin_id { get; set; }
         public String username { get; set; }
